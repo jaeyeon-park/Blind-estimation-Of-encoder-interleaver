@@ -19,7 +19,7 @@ class blockEnc(Enc):
 class hamming74(blockEnc):
 	def __init__(self):
 		blockEnc.__init__(self,7,4)
-	def generateRandBits(self,count):
+	def generateBlocks(self,count):
 		bits = BitArray()
 		for i in range(0,count):
 			msg = blockEnc.generateRandBits(self)
